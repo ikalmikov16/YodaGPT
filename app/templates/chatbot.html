@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} YodaGPT {% endblock %}
+
+{% block content %}
+
+<!-- Display all Messages -->
+<div class="message-container">
+    <div class="chatbot-title">
+        <h1> Master YodaGPT </h1>
+    </div>
+    {% for message in messages %}
+    <div class="message">
+
+        <div class="message-top">
+            <div class="user-msg"><b>You:</b> {{ message.question }}</div>
+            <div class="delete-msg">
+                <form method="POST">
+                    {% csrf_token %}
+                    <button type="submit" id="delete-msg" name="delete-message" value="{{ message.id }}"><b>X</b></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="chatgpt-msg">
+            <h4><b>Master Yoda:</b> </h4>
+            {{ message.answer|safe }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Text input -->
+<div class="input-container">
+    <form id='chat-form' method="POST">
+        {% csrf_token %}
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Speak to Master Yoda..." name="chat-input">
+            <div class="input-group-append">
+                <button id='send-btn' class="btn btn-success btn-lg" type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('send-btn').addEventListener('click', function() {
+        // Disable the button to prevent multiple submissions
+        const button = document.getElementById('send-btn');
+        button.disabled = true;
+
+        // Change button text to "Loading..."
+        button.textContent = 'Loading...';
+
+        // Allow the form to continue with submission
+        document.getElementById('chat-form').submit();
+    });
+</script>
+
+{% endblock %}

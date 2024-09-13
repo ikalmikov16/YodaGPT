@@ -1,0 +1,66 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv/
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Django-related files
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Ignore virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables (for secrets and sensitive data)
+.env
+*.env
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+
+# Migrations (optional, if you don't want to track migrations)
+migrations/
+
+# Static and media files (if you're collecting them separately)
+static/
+media/
+
+# Node-related (if using frontend with Node.js)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Pip related
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Others (specific to your system or tools)
+*.lock

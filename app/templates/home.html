@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} YodaGPT {% endblock %}
+
+{% block content %}
+
+<div class = "home-container">
+    <h1 class="chatbot-title"> Welcome to Master YodaGPT </h1>
+    <p> 
+        Welcome, young one! <br>
+        Much Force in you I sense hmmmm.
+    </p>
+    <p>
+        Master Yoda I am, and guide you I shall.<br>
+        Through the Force, much wisdom there is to gain, and balance in mind and spirit, find you can. 
+        Help you control the Force within and become wiser in your journey, I must.
+    </p>
+
+    <div class="home-image">
+        <img src="{% static 'images/yoda-intro.png' %}" alt="Project Demo">
+    </div>
+
+    <p>
+        Questions of life, struggles of the heart, challenges of the mind—bring them to me, you will. 
+        Through reflection and advice, learn to focus, calm yourself, and see with clarity, you shall.
+        Use me to strengthen your thoughts, harness your emotions, and find peace in times of doubt.
+    </p>
+    <p>
+        Patient you must be, and open to learning, always.
+        Along this path, a guide I will be, leading you toward peace, clarity, and strength.
+    </p>
+    <p>
+        Now, begin your journey, young one. 
+        Much to learn, you still have. Hmmmm.
+    </p>
+
+    <button onclick="window.location.href='/login'" type="button" class="btn btn-success btn-lg btn-block home-button">Enter the Yoda Hut!</button>
+    <br><br>
+
+    <p>
+        This project is powered by Django using the OpenAI API.<br>
+        It is deployed on <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>. <br>
+        You can check out the source code on my <a href="https://github.com/ikalmikov16/ChatGPT-Clone-Django" target="_blank">Github</a>.
+    </p>
+    <p>
+        May the Force be with you, <br>
+        Irakli Kalmikov & Master Yoda<br>
+    </p>
+</div>
+
+{% endblock %}
