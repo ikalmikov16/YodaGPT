@@ -15,7 +15,7 @@ build/
 *.sqlite3
 db.sqlite3
 media/
-staticfiles/
+# staticfiles/
 
 # Ignore virtual environments
 venv/
