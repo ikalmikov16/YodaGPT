@@ -1,0 +1,109 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Containers */
+.contain{
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.message-container {
+    flex-grow: 1;
+    max-width: 800px;
+    width: 100%;
+    overflow-y: scroll;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.input-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 0 auto;
+}
+
+.home-container{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+
+/* Home Page Elements */
+.chatbot-title{
+    font-size: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.home-container p{
+    font-size: 20px;
+}
+
+.home-image{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    /* border: 1px solid #ccc; */
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.home-image img{
+    width: 100%;
+    height: auto;
+}
+
+.home-button{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Chatbot Page Elements */
+.message{
+    padding-top: 10px;
+    padding-inline: 10px;
+    border: 1px solid #d9d8d8; /* Set the border style, width, and color */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    margin-bottom: 7px;
+}
+
+.message-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-msg{
+    background-color: rgb(231, 255, 239);
+    padding: 5px 10px;
+    border-radius: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    max-width: 730px;
+    word-break: break-all;
+}
+
+.chatgpt-msg{
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#delete-msg{
+    padding: 0px 6px;
+    color: white;
+    background-color: rgb(256, 100, 100);
+    border: none;
+    border-radius: 20px;
+}
+
+
+/* Login and Sign Up Forms*/
+.form{
+    max-width: 600px;
+}

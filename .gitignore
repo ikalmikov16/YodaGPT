@@ -50,7 +50,7 @@ coverage.xml
 migrations/
 
 # Static and media files (if you're collecting them separately)
-static/
+# static/
 media/
 
 # Node-related (if using frontend with Node.js)
