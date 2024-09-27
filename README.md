@@ -6,7 +6,7 @@ YodaGPT will provide thoughtful and profound advice on personal and mental matte
 YodaGPT will encourage self-reflection and growth, inspiring calm, clarity, and self-improvement.
 
 It maintains chat context and also offers the option to delete specific messages by the click of a button.
-You can check out how it works here: https://ika16.pythonanywhere.com/chatbot
+You can check out how it works here: https://yodagpt.pythonanywhere.com/chatbot
 
 ## Backend
 The project is built in Django and includes some of its built-in features like user authentication.
